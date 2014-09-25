@@ -2,6 +2,15 @@ FirstAssignment
 ===============
 ===============
 
+R version 3.1.1 (2014-07-10)
+
+R Studio Version 0.98.1056 – © 2009-2013 RStudio, Inc.
+
+Please report any bugs or suggestions at: https://github.com/NicolasatHertie/FirstAssignment/issues/6
+
+# Task for the first Pair Assignment
+#We need to create a new public GitHub repository
+
 # To see all the R core data sets available
 data() 
 
