@@ -3,9 +3,13 @@ FirstAssignment
 ===============
 
 data() # This is how we see all the R core data sets available
+
 data(swiss) # We load the core data set called swiss
+
 names(swiss) # To see the names of the variables in the data set
+
 head(swiss[1:3,1:4]) # To look at the observations (in a table)
+
 head(swiss[1:3,1:5])
 head(swiss[1:3,2:6])
 library(magrittr)
