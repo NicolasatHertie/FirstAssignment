@@ -1,0 +1,45 @@
+# Set working directory
+setwd ('/Users/Nico/Documents/FirstAssignment')
+
+# Link to Meilin's file
+source ('/Users/Nico/Documents/FirstAssignment/data_final_Meilin.R)
+
+# To see all the R core data sets available
+data() 
+
+# To load the core data set called swiss
+data(women) 
+
+# To see the names of the variables in the data set
+names(women) 
+
+# To look at the observations (in a table)
+head(women[,]) 
+
+### Descriptive Statistics
+
+### Given that the data set looks at gives the average heights and weights
+### for American women aged 30–39, it is worth looking at the following
+### descriptive statistics: mean, mode, medium, variance and standard deviation.
+### The frequency is not providing useful information.
+
+# 1. Mean
+hist(sleep$extra)
+
+?uspop
+names(uspop)
+?women
+hist(women$height)
+hist(women$weight)
+mean(women$height)
+head(women[1:20,1:2])
+mean(women$weight)
+plot(women$height,women$weight)
+var(women$weight)
+var(women$height)
+sd(women$height)
+Normal30 <- rnorm(1e+6, mean = 65, sd = 4.472136)
+hist(Normal30)
+x   <- seq(58,63,length=1000)
+y   <- dnorm(x,mean=65, sd=4.472136)
+plot(x,y, type="l", lwd=1)
