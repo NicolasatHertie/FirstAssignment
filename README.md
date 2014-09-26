@@ -2,46 +2,43 @@ FirstAssignment
 ===============
 
 
-##### R version 3.1.1 (2014-07-10)
+R version 3.1.1 (2014-07-10)
+Copyright (C) 2014 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.1.0 (64-bit)
 
-##### R Studio Version 0.98.1056 – © 2009-2013 RStudio, Inc.
+R Studio Version 0.98.1056 – © 2009-2013 RStudio, Inc.
 
-##### Please report any bugs or suggestions at: https://github.com/NicolasatHertie/FirstAssignment/issues/6
+R Core Team (2014). R: A language and environment for
+  statistical computing. R Foundation for Statistical
+  Computing, Vienna, Austria. URL http://www.R-project.org/.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2014},
+    url = {http://www.R-project.org/},
+  }
+
+Please report any bugs or suggestions at: https://github.com/NicolasatHertie/FirstAssignment/issues/6
 
 # Task for the first Pair Assignment
-### We need to create a new public GitHub repository
+Each pair will create a new public GitHub repository. It must be fully documented, 
+including with a descriptive README.md file. Your code must be human readable and 
+clearly commented.
 
-# To see all the R core data sets available
-data() 
+Each pair should include R source code files that:
++ Access at least two core R data sets
++ Illustrate the datas’ distributions using a variety of relevant
+descriptive statistics
++ Two files must be dynamically linked
 
-# To load the core data set called swiss
-data(swiss) 
+Another pair makes a pull request. And this is discussed/merged.
 
-# To see the names of the variables in the data set
-names(swiss) 
 
-# To look at the observations (in a table)
-head(swiss[1:3,1:4]) 
 
-head(swiss[1:3,1:5])
-
-head(swiss[1:3,2:6])
-
-library(magrittr)
-
-library(swiss)
-
-install.packages(magrittr)
-
-install.packages('dplyr')
-
-library(magrittr)
-
-rnorm(1000,mean = 10) %>% mean () %>% round (digits=2)
-hist(swiss$Examination) # To produce a histogram showing frequency of examinations
-fun_mean <- function (x=swiss$Examination) {
-    sum(x) / length(x)
-}
-hist(swiss$Catholic)
 
 
