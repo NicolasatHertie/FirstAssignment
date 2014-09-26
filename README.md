@@ -3,7 +3,6 @@
 
 First Pair Assignment
 
-Friday, 26th September 2014
 ===============
 
 
@@ -56,8 +55,8 @@ Develop your understanding of:
 + Version control,
 + Basic R data structures and descriptive statistics.
 
-### Deadline for submission
-Midnight 26 September.
+### Deadline for submission:
+Midnight, 26th September
 
 
 
