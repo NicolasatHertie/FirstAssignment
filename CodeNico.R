@@ -28,7 +28,7 @@ head(women[,])
 
 # 1. Plot variables to observe potential links
 plot(women$height,women$weight, xlab = 'Height',ylab = 'Weight')
-plot(women, xlab = "Height (in)", ylab = "Weight (lbs)",
+plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
      main = "women data: American women aged 30-39")
 
 # 2. Mean
