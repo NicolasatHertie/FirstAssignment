@@ -19,11 +19,9 @@ head(infert[,])
 
 ### Given that the data set looks at Infertility after Spontaneous and Induced 
 ### Abortion, the variables induced, spontaneous, age and parity are especially
-### interesting to look at. for the descriptive statistics it is worth looking
+### interesting to look at. For the descriptive statistics it is worth looking
 ### at frequency (histrograms), mean, quartiles and interquartile ranges, 
 ### median, variance and standard deviation, boxplots and distribution plots. 
-### I additionally plotted the variables at the beginning to look at the 
-### relationship between them.
 
 # 3.1 Histograms 
 hist(infert$induced, xlab="Number of Induced Abortions")
@@ -31,7 +29,7 @@ hist(infert$spontaneous, xlab="Number of Spontaneous Abortions")
 hist(infert$age, xlab="Age (in years)")
 hist(infert$parity, xlab="Parity (number of pregnancies for more than 24 weeks)")
 
-# 3.2 Simple Tables (to see if there are any NA's)
+# 3.2 Simple Tables
 table(infert$induced)
 table(infert$spontaneous)
 table(infert$age)
@@ -43,7 +41,7 @@ mean (infert$spontaneous)
 mean (infert$age) 
 mean (infert$parity)
 
-# 3.4. Medium 
+# 3.4. Medians 
 median (infert$induced) 
 median (infert$spontaneous) 
 median (infert$age) 
@@ -67,69 +65,76 @@ sd(infert$spontaneous)
 sd(infert$age) 
 sd(infert$parity)
 
-# 3.8. Quartiles & Interquartile Ranges
-# Quartiles
+# 3.8. Quartiles
 summary(infert$induced)
 summary(infert$spontaneous)
 summary(infert$age) 
 summary(infert$parity)
 
 # 3.9. Interquartile Ranges
-IQR(infert$age)
 IQR(infert$induced)
 IQR(infert$spontaneous)
-IQR(infert$age) 
+IQR(infert$age)
 IQR(infert$parity)
 
 # 3.10. Box plots
 
-# Create subset for induced
-indu1 <- subset(infert, induced == 1)
-indu2 <- subset(infert, induced == 2)
+# Box plot for age
+boxplot(infert$age)
+
+# Create 3 subsets for the number of induced abortions
+# indu0 is the subset of women with zero induced abortions
 indu0 <- subset(infert, induced == 0)
+# indu1 is the subset of women with one induced abortion
+indu1 <- subset(infert, induced == 1)
+# indu2 is the subset of women with two induced abortions
+indu2 <- subset(infert, induced == 2)
 
 # Boxplots for induced abortions
-boxplot(infert$age)
 boxplot(indu0$age)
 boxplot(indu1$age)
 boxplot(indu2$age)
 
-# Create subset for spontaneous
-spon1 <- subset(infert,spontaneous==1)
-spon2 <- subset(infert,spontaneous==2)
+# Create 3 subsets for the number of spontaneous abortions
+# spon0 is the subset of women with zero spontaneous abortions
 spon0 <- subset(infert,spontaneous==0)
+# spon1 is the subset of women with one spontaneous abortion
+spon1 <- subset(infert,spontaneous==1)
+# spon2 is the subset of women with one spontaneous abortion
+spon2 <- subset(infert,spontaneous==2)
 
 # Boxplots for spontaneous abortions
 boxplot(spon0$age)
 boxplot(spon1$age)
 boxplot(spon2$age)
 
-# 3.11. Scatterplots and Bar Charts
+# 3.11. Joint Distributions / Plots
 
-# Bar Chart: induced abortions & education years
-plot(indu0$education, xlab ='education')
-plot(indu1$education, xlab ='education')
-plot(indu2$education, xlab ='education')
+# Number of spontaneous abortions & Age
+plot(infert$spontaneous,infert$age, xlab="Number of Spontaneous Abortions", ylab="Age (in years)")
 
-# Bar Chart: spontaneous abortions & age - WARUM KEIN BARCHART?
-plot(spon0$age, xlab ='age')
-plot(spon1$age, xlab ='age')
-plot(spon2$age, xlab ='age')
+# Parity & Age
+plot(infert$parity,infert$age,xlab="Parity (number of pregnancies 
+for more than 24 weeks)", ylab="Age (in years)")
 
-plot(infert$parity,infert$age)
+# Number of induced abortions & Parity
+plot (infert$parity,infert$induced,xlab="Parity (number of pregnancies 
+for more than 24 weeks)", ylab="Number of Induced Abortions")
 
-# Bar Chart: induced abortions & parity - WARUM KEIN BARCHART?
-plot(indu0$parity, xlab ='parity')
-plot(indu1$parity, xlab ='parity')
-plot(indu2$parity, xlab ='parity')
+# Number of spontaneous abortions & Parity
+plot(infert$parity,infert$spontaneous , xlab="Parity (number of pregnancies 
+for more than 24 weeks)", ylab="Number of Spontaneous Abortions")
 
-plot(infert$parity, xlab ='parity')
+# 3.12. Summarise with Loess
 
-# 3.12. Joint Distributions
-plot(indu0$parity, indu0$age)
+# Look at the relation between age and parity
+ggplot2::ggplot(infert, aes(age,parity)) + geom_point() + geom_smooth() + theme_bw()
 
-# 3.13. Summarise with Loess to look at the relation between age and parity
-ggplot2::ggplot(infert, aes(age, parity)) + geom_point() + geom_smooth() + theme_bw()
+# Look at the relation between spontaneous abortions and parity
+ggplot2::ggplot(infert, aes(parity,spontaneous)) + geom_point() + geom_smooth() + theme_bw()
+
+# Look at the relation between induced abortions and parity
+ggplot2::ggplot(infert, aes(parity,induced)) + geom_point() + geom_smooth() + theme_bw()
 
 
 

@@ -1,3 +1,6 @@
+# First Assignment - File 1
+# ===============
+
 ### 1. Working directory and R packages
 setwd ('/Users/Nico/Documents/FirstAssignment')
 
