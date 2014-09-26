@@ -2,7 +2,7 @@ FirstAssignment
 ===============
 
 ### 1. Working directory
-# setwd('/Users/Meilin/Downloads/FirstAssignment')
+setwd('/Users/Meilin/Downloads/FirstAssignment')
 
 ### 2. Source each other's files
 source('/Users/Meilin/Downloads/FirstAssignment/CodeNico.R')
@@ -15,9 +15,8 @@ data()
 # Load the core data set called infert
 data(infert) 
 
-# 4. Look at the data set
+### 4. Look at the data set
 
-# Look at the dataset
 ?infert
 
 # Look at the names of the variables in the data set
@@ -28,11 +27,17 @@ head(infert[,])
 
 ### 5. Descriptive statistics: 
 
-# 5.i. Histogram 
+### Given that the data set looks at the average heights and weights
+### for American women aged 30 to 39, it is worth looking at the following
+### descriptive statistics: mean, mode, medium, variance and standard deviation.
+### The frequency is not providing useful information and the histogram is thus
+### not very relevant.
 
-#5.ii. Plot the variables 5.a. 
-
-# look at variables
+# 5.1 Histograms 
+hist(infert$induced, xlab="Number of Induced Abortions")
+hist(infert$spontaneous, xlab="Number of Spontaneous Abortions")
+hist(infert$age, xlab="Age (in years)")
+hist(infert$parity, xlab="Parity (number of pregnancies for more than 24 weeks)")
 
 # simple tables
 table(infert$induced)
@@ -52,18 +57,7 @@ infert$cat_age [infert$age %in% 41:45] <- 5
 
 table(infert$cat_age)
 
-# crosstables
-table(infert$induced, infert$cat_age)
-table(infert$spontaneous, infert$cat_age)
-table(infert$parity, infert$cat_age)
-
-# 1. Histograms
-hist(infert$induced)
-hist(infert$spontaneous)
-hist(infert$age)
-hist(infert$parity) # need to log???
-
-# 5.a. Mean
+# 5.a. Means
 mean (infert$induced, na.rm=TRUE) 
 mean (infert$spontaneous, na.rm=TRUE) 
 mean (infert$age, na.rm=TRUE) 
@@ -160,6 +154,8 @@ plot(indu2$education, xlab ='education')
 plot(spon0$age, xlab ='age')
 plot(spon1$age, xlab ='age')
 plot(spon2$age, xlab ='age')
+
+plot(infert$parity,infert$age)
 
 # Bar Chart: induced abortions & parity - WARUM KEIN BARCHART?
 plot(indu0$parity, xlab ='parity')
