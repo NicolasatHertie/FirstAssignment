@@ -1,7 +1,7 @@
 
 # MPP-E1180: Introduction to Collaborative Social Science Data Analysis
 
-### First Pair Assignment
+### First Pair Assignment: Nicolas Rosemberg & Meilin Möllenkamp
 
 ===============
 
@@ -31,8 +31,6 @@ Both codes are structured according to the following logic:
 4. Exploring the data set
 5. Providing descripitive statistics
 
-
-Nicolas Rosemberg & Meilin Möllenkamp
 
 
 # Further Informations on the Task
