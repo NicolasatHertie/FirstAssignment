@@ -1,5 +1,5 @@
 ### 1. Working directory and R packages
-setwd ('/Users/Nico/Documents/FirstAssignment')
+# setwd ('/Users/Nico/Documents/FirstAssignment')
 
 # In case you do not have the ggplot2 and magrittr packages install them by  
 # running the following commands: install.packages("ggplot2") and 
