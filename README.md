@@ -32,7 +32,9 @@ Both codes are structured according to the following logic:
 4. Exploring the data set
 5. Providing descripitive statistics
 
+### Pull Requests
 
+We did some minor changes to the File Henryjean/Pair-Assignment-1 of Owen and Thierry and created a pull request.
 
 # Further Informations on the Task
 
