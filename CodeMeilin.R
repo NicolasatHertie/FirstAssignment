@@ -77,10 +77,10 @@ IQR(infert$spontaneous)
 IQR(infert$age)
 IQR(infert$parity)
 
-# 3.10. Box plots
+# 3.10. Boxplots
 
-# Box plot for age
-boxplot(infert$age)
+# Boxplot for age
+boxplot(infert$age, main = "Boxplot age")
 
 # Create 3 subsets for the number of induced abortions
 # indu0 is the subset of women with zero induced abortions
@@ -91,9 +91,9 @@ indu1 <- subset(infert, induced == 1)
 indu2 <- subset(infert, induced == 2)
 
 # Boxplots for induced abortions
-boxplot(indu0$age)
-boxplot(indu1$age)
-boxplot(indu2$age)
+boxplot(indu0$age, main = "Boxplot age for women with zero induced abortions")
+boxplot(indu1$age, main = "Boxplot age for women with one induced abortion")
+boxplot(indu2$age, main = "Boxplot age for women with two induced abortions")
 
 # Create 3 subsets for the number of spontaneous abortions
 # spon0 is the subset of women with zero spontaneous abortions
@@ -104,9 +104,9 @@ spon1 <- subset(infert,spontaneous==1)
 spon2 <- subset(infert,spontaneous==2)
 
 # Boxplots for spontaneous abortions
-boxplot(spon0$age)
-boxplot(spon1$age)
-boxplot(spon2$age)
+boxplot(spon0$age, main = "Boxplot age for women with zero spontaneous abortions")
+boxplot(spon1$age, main = "Boxplot age for women with one spontaneous abortion")
+boxplot(spon2$age, main = "Boxplot age for women with two spontaneous abortions")
 
 # 3.11. Joint Distributions / Plots
 
