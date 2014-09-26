@@ -13,7 +13,7 @@ data(infert)
 # Look at the names of the variables in the data set
 names(infert) 
 # Look at the first 6 observations (in a table)
-head(infert[,]) 
+head(infert[, ]) 
 
 ### 3. Descriptive statistics: 
 
@@ -97,11 +97,11 @@ boxplot(indu2$age, main = "Boxplot age for women with two induced abortions")
 
 # Create 3 subsets for the number of spontaneous abortions
 # spon0 is the subset of women with zero spontaneous abortions
-spon0 <- subset(infert,spontaneous==0)
+spon0 <- subset(infert, spontaneous==0)
 # spon1 is the subset of women with one spontaneous abortion
-spon1 <- subset(infert,spontaneous==1)
+spon1 <- subset(infert, spontaneous==1)
 # spon2 is the subset of women with one spontaneous abortion
-spon2 <- subset(infert,spontaneous==2)
+spon2 <- subset(infert, spontaneous==2)
 
 # Boxplots for spontaneous abortions
 boxplot(spon0$age, main = "Boxplot age for women with zero spontaneous abortions")
@@ -111,18 +111,18 @@ boxplot(spon2$age, main = "Boxplot age for women with two spontaneous abortions"
 # 3.11. Joint Distributions / Plots
 
 # Number of spontaneous abortions & Age
-plot(infert$spontaneous,infert$age, xlab="Number of Spontaneous Abortions", ylab="Age (in years)")
+plot(infert$spontaneous, infert$age, xlab="Number of Spontaneous Abortions", ylab="Age (in years)")
 
 # Parity & Age
-plot(infert$parity,infert$age,xlab="Parity (number of pregnancies 
+plot(infert$parity, infert$age,xlab="Parity (number of pregnancies 
 for more than 24 weeks)", ylab="Age (in years)")
 
 # Number of induced abortions & Parity
-plot (infert$parity,infert$induced,xlab="Parity (number of pregnancies 
+plot (infert$parity, infert$induced, xlab="Parity (number of pregnancies 
 for more than 24 weeks)", ylab="Number of Induced Abortions")
 
 # Number of spontaneous abortions & Parity
-plot(infert$parity,infert$spontaneous , xlab="Parity (number of pregnancies 
+plot(infert$parity, infert$spontaneous , xlab="Parity (number of pregnancies 
 for more than 24 weeks)", ylab="Number of Spontaneous Abortions")
 
 # 3.12. Summarise with Loess
