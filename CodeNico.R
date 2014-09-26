@@ -25,7 +25,7 @@ head(women[,])
 ### not very relevant.
 
 # 1. Plot variables to observe potential links
-plot(women$height,women$weight)
+plot(women$height,women$weight, xlab = 'Height',ylab = 'Weight')
 
 # 2. Mean
 mean (women$height)
@@ -55,4 +55,5 @@ summary(women$weight)
 
 boxplot(women$height, main = 'Height')
 boxplot(women$weight, main = 'Weight')
+
 
