@@ -1,27 +1,18 @@
 FirstAssignment
 ===============
 
+### 1. Working directory
+setwd('/Users/Meilin/Downloads/FirstAssignment')
 
-##### R version 3.1.1
-
-##### R Studio Version 0.98.1056
-
-##### Please report any bugs or suggestions at: https://github.com/NicolasatHertie/FirstAssignment/issues/6
-
-# Task for the first Pair Assignment
-### We need to create a new public GitHub repository
-  
-# 1. Working directory
-
-# 2. Source each other's file
+### 2. Source each other's files
 source('/Users/Meilin/Downloads/FirstAssignment/tryingsource.R')
 
-# 3.Identify the data set
+### 3. Choose the data set
 
 # See all the R core data sets available
 data() 
 
-# Load the core data set called swiss
+# Load the core data set called infert
 data(infert) 
 
 # 4. Look at the data set
