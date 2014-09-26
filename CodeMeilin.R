@@ -1,16 +1,9 @@
 # First Assignment
 # ===============
 
-<<<<<<< HEAD
 # Load packages
 library(magrittr)
 =======
-### 1. Working directory
-setwd('/Users/Meilin/Downloads/FirstAssignment')
-
-### 2. Source each other's files
-source('/Users/Meilin/Downloads/FirstAssignment/CodeNico.R')
->>>>>>> FETCH_HEAD
 
 ### 3. Choose the data set
 
@@ -32,11 +25,13 @@ head(infert[,])
 
 ### 5. Descriptive statistics: 
 
-### Given that the data set looks at the average heights and weights
-### for American women aged 30 to 39, it is worth looking at the following
-### descriptive statistics: mean, mode, medium, variance and standard deviation.
-### The frequency is not providing useful information and the histogram is thus
-### not very relevant.
+### Given that the data set looks at Infertility after Spontaneous and Induced 
+### Abortion, the variables induced, spontaneous, age and parity are especially
+### interesting to look at. for the descriptive statistics it is worth looking
+### at frequency (histrograms), mean, quartiles and interquartile ranges, 
+### medium, variance and standard deviation, boxplots and distribution plots. 
+### I additionally plotted the variables at the beginning to look at the 
+### relationship between them.
 
 # 5.1 Histograms 
 hist(infert$induced, xlab="Number of Induced Abortions")
@@ -44,12 +39,11 @@ hist(infert$spontaneous, xlab="Number of Spontaneous Abortions")
 hist(infert$age, xlab="Age (in years)")
 hist(infert$parity, xlab="Parity (number of pregnancies for more than 24 weeks)")
 
-# simple tables
+# simple tables (to see if there are any NA's)
 table(infert$induced)
 table(infert$spontaneous)
 table(infert$age)
 table(infert$parity)
-table(infert$eduction)
 
 # categorizing age
 infert$cat_age <- infert$age
@@ -63,10 +57,10 @@ infert$cat_age [infert$age %in% 41:45] <- 5
 table(infert$cat_age)
 
 # 5.a. Means
-mean (infert$induced, na.rm=TRUE) 
-mean (infert$spontaneous, na.rm=TRUE) 
-mean (infert$age, na.rm=TRUE) 
-mean (infert$parity, na.rm=TRUE)
+mean (infert$induced) 
+mean (infert$spontaneous) 
+mean (infert$age) 
+mean (infert$parity)
 
 # 5.b. Medium 
 # Loop
@@ -74,13 +68,10 @@ mean (infert$parity, na.rm=TRUE)
 #round(digits=1) %>% paste (names (infert) [i], ., '\n') %>% cat()} # ERROR???
 
 #na.rm - indicating whether NA values should be stripped
-median (infert$induced, na.rm=TRUE) 
-median (infert$spontaneous, na.rm=TRUE) 
-median (infert$age, na.rm=TRUE) 
-median (infert$parity, na.rm=TRUE)
-
-# 5.c. Mode (for nominal data)
-summary(infert$education, na.rm=TRUE)
+median (infert$induced) 
+median (infert$spontaneous) 
+median (infert$age) 
+median (infert$parity)
 
 # 5.d. Range
 range(infert$induced, na.rm=TRUE) 
