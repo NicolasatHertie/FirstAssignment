@@ -2,8 +2,15 @@
 # ===============
 
 # Load packages
+
+# In case you do not have the magrittr package install it by running the 
+# following command: install.packages('magrittr')
 library(magrittr)
-=======
+
+# In case you do not have the ggplot2 package install it by running the 
+# following command: install.packages('ggplot2')
+library(ggplot2)
+#=======
 
 ### 3. Choose the data set
 
@@ -29,7 +36,7 @@ head(infert[,])
 ### Abortion, the variables induced, spontaneous, age and parity are especially
 ### interesting to look at. for the descriptive statistics it is worth looking
 ### at frequency (histrograms), mean, quartiles and interquartile ranges, 
-### medium, variance and standard deviation, boxplots and distribution plots. 
+### median, variance and standard deviation, boxplots and distribution plots. 
 ### I additionally plotted the variables at the beginning to look at the 
 ### relationship between them.
 
@@ -125,13 +132,7 @@ boxplot(spon0$age)
 boxplot(spon1$age)
 boxplot(spon2$age)
 
-# 5.i. Summarise with Loess
-
-# In case you do not have the ggplot2 package install it by running the 
-# following command: install.packages('ggplot2')
-library(ggplot2)
-
-# Look at the relation between age and parity
+# 5.i. Summarise with Loess to look at the relation between age and parity
 ggplot2::ggplot(infert, aes(age, parity)) + geom_point() + geom_smooth() + theme_bw()
 
 
@@ -161,14 +162,4 @@ plot(infert$parity, xlab ='parity')
 
 # 11. Joint Distributions
 plot(indu0$parity, indu0$age)
-
-
-# Other stuff
-plot(spon2$age, spon2$spontaneous)
-plot(spon2$age)
-infert$parity
-
-plot(infert$age,infert$parity)
-plot(infert$induced,infert$age)
-plot(infert$induced,infert$spontaneous)
 
