@@ -1,4 +1,6 @@
-FirstAssignment
+MPP-E1180: Introduction to Collaborative Social Science Data Analysis
+
+First Pair Assignment
 ===============
 
 
