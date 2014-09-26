@@ -16,6 +16,8 @@ R Studio Version 0.98.1056 – © 2009-2013 RStudio, Inc.
 R Core Team (2014). R: A language and environment for
   statistical computing. R Foundation for Statistical
   Computing, Vienna, Austria. URL http://www.R-project.org/.
+  
+> Style guide: We use Hadley Wickham´s Style Guide from [r-pkgs.had.co.nz/style.html](http://r-pkgs.had.co.nz/style.html).
 
 Please report any bugs or suggestions at: https://github.com/NicolasatHertie/FirstAssignment/issues/6
 
