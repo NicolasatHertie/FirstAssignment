@@ -1,8 +1,8 @@
 ### 1. Working directory
-setwd ('/Users/Nico/Documents/FirstAssignment')
+# setwd ('/Users/Nico/Documents/FirstAssignment')
 
 ### 2. Source each other's files
-source ('/Users/Nico/Documents/FirstAssignment/data_final_Meilin.R')
+# source ('/Users/Nico/Documents/FirstAssignment/Final_R-code_Meilin.R')
 
 ### 3. Choose the data set
 
@@ -27,9 +27,8 @@ head(women[,])
 ### not very relevant.
 
 # 1. Plot variables to observe potential links
-plot(women$height,women$weight, xlab = 'Height',ylab = 'Weight')
 plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
-     main = "women data: American women aged 30-39")
+     main = "Women data: American women aged 30-39")
 
 # 2. Mean
 mean (women$height)
