@@ -1,4 +1,5 @@
-MPP-E1180: Introduction to Collaborative Social Science Data Analysis
+
+# MPP-E1180: Introduction to Collaborative Social Science Data Analysis
 
 First Pair Assignment
 ===============
@@ -14,18 +15,10 @@ R Core Team (2014). R: A language and environment for
   statistical computing. R Foundation for Statistical
   Computing, Vienna, Austria. URL http://www.R-project.org/.
 
-A BibTeX entry for LaTeX users is
-
-  @Manual{,
-    title = {R: A Language and Environment for Statistical Computing},
-    author = {{R Core Team}},
-    organization = {R Foundation for Statistical Computing},
-    address = {Vienna, Austria},
-    year = {2014},
-    url = {http://www.R-project.org/},
-  }
-
 Please report any bugs or suggestions at: https://github.com/NicolasatHertie/FirstAssignment/issues/6
+
+# Instructions
+This repository contains two R codes. Both codes are dynamically linked. Please work with the file called 'CodeNico'.
 
 # Task for the first Pair Assignment
 Each pair will create a new public GitHub repository. It must be fully documented, 
@@ -40,7 +33,14 @@ descriptive statistics
 
 Another pair makes a pull request. And this is discussed/merged.
 
+# Learning objectives: 
+Develop your understanding of: 
++ file structures,
++ version control,
++ basic R data structures and descriptive statistics.
 
+# Deadline for submission
+Midnight 26 September.
 
 
 
