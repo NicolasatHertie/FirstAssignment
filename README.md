@@ -2,6 +2,8 @@
 # MPP-E1180: Introduction to Collaborative Social Science Data Analysis
 
 First Pair Assignment
+
+Friday, 26th September 2014
 ===============
 
 
@@ -31,7 +33,11 @@ Both codes are structured according to the following logic:
 5. Providing descripitive statistics
 
 
-# Task for the first pair assignment
+# Nicolas Rosemberg & Meilin Möllenkamp
+
+
+# Further Informations on the Tasks for the first pair assignment
+
 Each pair will create a new public GitHub repository. It must be fully documented, 
 including with a descriptive README.md file. Your code must be human readable and 
 clearly commented.
