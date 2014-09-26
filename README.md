@@ -33,7 +33,7 @@ Both codes are structured according to the following logic:
 5. Providing descripitive statistics
 
 
-# Nicolas Rosemberg & Meilin Möllenkamp
+Nicolas Rosemberg & Meilin Möllenkamp
 
 
 # Further Informations on the Tasks for the first pair assignment
@@ -50,13 +50,13 @@ descriptive statistics
 
 Another pair makes a pull request. And this is discussed/merged.
 
-# Learning objectives: 
+## Learning objectives: 
 Develop your understanding of: 
 + File structures,
 + Version control,
 + Basic R data structures and descriptive statistics.
 
-# Deadline for submission
+## Deadline for submission
 Midnight 26 September.
 
 
