@@ -1,8 +1,14 @@
-### 1. Working directory
+### 1. Working directory and R packages
 setwd ('/Users/Nico/Documents/FirstAssignment')
 
+# In case you do not have the ggplot2 and magrittr packages install them by  
+# running the following commands: install.packages("ggplot2") and 
+# install.packages("magrittr")
+library(ggplot2)
+library(magrittr)
+
 ### 2. Source each other's files
-source('Final_R-code_Meilin.R')
+source('CodeMeilin.R')
 
 ### 3. Choose the data set
 
@@ -70,10 +76,5 @@ boxplot(women$height, main = 'Height')
 boxplot(women$weight, main = 'Weight')
 
 # 9. Summarise with loess
-
-# In case you do not have the ggplot2 package install it by running the 
-# following command: install.packages("ggplot2") 
-library(ggplot2)
-
 ggplot2::ggplot(women, aes(weight, height)) + geom_point() + geom_smooth() + theme_bw()
 
