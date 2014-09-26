@@ -2,10 +2,10 @@ FirstAssignment
 ===============
 
 ### 1. Working directory
-setwd('/Users/Meilin/Downloads/FirstAssignment')
+# setwd('/Users/Meilin/Downloads/FirstAssignment')
 
 ### 2. Source each other's files
-source('/Users/Meilin/Downloads/FirstAssignment/tryingsource.R')
+source('/Users/Meilin/Downloads/FirstAssignment/CodeNico.R')
 
 ### 3. Choose the data set
 
@@ -20,10 +20,10 @@ data(infert)
 # Look at the dataset
 ?infert
 
-# See the names of the variables in the data set
+# Look at the names of the variables in the data set
 names(infert) 
 
-# Look at the observations (in a table)
+# Look at the first 6 observations (in a table)
 head(infert[,]) 
 
 ### 5. Descriptive statistics: 
