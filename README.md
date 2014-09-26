@@ -28,7 +28,7 @@ Both codes are structured according to the following logic:
 2. Dynamically linking the files (only for 'CodeNico')
 3. Choosing the data set
 4. Exploring the data set
-5. Providing descripitve statistics
+5. Providing descripitive statistics
 
 
 # Task for the first pair assignment
