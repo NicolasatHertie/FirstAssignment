@@ -25,10 +25,10 @@ head(women[,])
 
 ### Given that the data set looks at the average heights and weights
 ### for American women aged 30 to 39, it is worth looking at the following
-### descriptive statistics: frequency (histrograms), mean, mode, quartiles 
-### and interquartile ranges, medium, variance and standard deviation,
-### boxplots and distribution plots. I additionally plotted the variables
-### at the beginning to look at the relationship between them. 
+### descriptive statistics: frequency (histrograms), mean, median, quartiles 
+### and interquartile ranges, range, variance and standard deviation, boxplots
+### and distribution plots. I additionally plotted the variables to look at the
+### relationship between them. 
 
 
 # 5.1 Histograms
@@ -37,7 +37,7 @@ hist(women$weight, xlab = "Weight (lb)")
 
 # 5.2 Plot variables to observe potential links
 plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
-     main = "Women data: American women aged 30-39")
+     main = "Height-weight ratio for American women aged 30-39")
 
 # 5.2 Mean
 mean (women$height)
@@ -47,7 +47,7 @@ mean (women$weight)
 median(women$height)
 median(women$weight)
 
-# 4. Mode, quartiles and interquartile ranges 
+# 4. Quartiles and interquartile ranges 
 summary(women$height)
 summary(women$weight)
 IQR(women$height)
