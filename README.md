@@ -2,6 +2,7 @@
 # MPP-E1180: Introduction to Collaborative Social Science Data Analysis
 
 First Pair Assignment
+
 Friday, 26th September 2014
 
 ===============
@@ -19,7 +20,7 @@ R Core Team (2014). R: A language and environment for
 
 Please report any bugs or suggestions at: https://github.com/NicolasatHertie/FirstAssignment/issues/6
 
-# Instructions and background information.
+### Instructions and background information.
 This repository contains two R codes. Both codes are dynamically linked. Please work with the file called 'CodeNico'.
 
 The code 'CodeNico' works with the data set called women which describes the average heights and weights for American women aged 30 to 39. The code 'CodeMeilin' works with the data set infert which describes infertility after spontaneous and induced abortions.
@@ -36,7 +37,7 @@ Both codes are structured according to the following logic:
 Nicolas Rosemberg & Meilin Möllenkamp
 
 
-# Further Informations on the Tasks for the first pair assignment
+# Further Informations on the Task
 
 Each pair will create a new public GitHub repository. It must be fully documented, 
 including with a descriptive README.md file. Your code must be human readable and 
@@ -50,13 +51,13 @@ descriptive statistics
 
 Another pair makes a pull request. And this is discussed/merged.
 
-## Learning objectives: 
+### Learning objectives: 
 Develop your understanding of: 
 + File structures,
 + Version control,
 + Basic R data structures and descriptive statistics.
 
-## Deadline for submission
+### Deadline for submission
 Midnight 26 September.
 
 
