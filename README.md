@@ -36,7 +36,8 @@ Both codes are structured according to the following logic:
 
 We did some minor changes to the File Henryjean/Pair-Assignment-1 of Owen and Thierry and created a pull request.
 
-# Further Informations on the Task
+
+# Further Informations on the Tasks
 
 Each pair will create a new public GitHub repository. It must be fully documented, 
 including with a descriptive README.md file. Your code must be human readable and 
