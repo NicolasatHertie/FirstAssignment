@@ -16,17 +16,13 @@ library(ggplot2)
 
 # See all the R core data sets available
 data() 
-
 # Load the core data set called infert
 data(infert) 
 
 ### 4. Look at the data set
-
 ?infert
-
 # Look at the names of the variables in the data set
 names(infert) 
-
 # Look at the first 6 observations (in a table)
 head(infert[,]) 
 
@@ -70,47 +66,42 @@ mean (infert$age)
 mean (infert$parity)
 
 # 5.b. Medium 
-# Loop
-#for (i in 1:length(names(infert))) {infert[,i] %>% mean() %>% 
-#round(digits=1) %>% paste (names (infert) [i], ., '\n') %>% cat()} # ERROR???
-
-#na.rm - indicating whether NA values should be stripped
 median (infert$induced) 
 median (infert$spontaneous) 
 median (infert$age) 
 median (infert$parity)
 
 # 5.d. Range
-range(infert$induced, na.rm=TRUE) 
-range(infert$spontaneous, na.rm=TRUE) 
-range(infert$age, na.rm=TRUE) 
-range(infert$parity, na.rm=TRUE)
+range(infert$induced) 
+range(infert$spontaneous) 
+range(infert$age) 
+range(infert$parity)
 
 # 5.e. Variance
-var(infert$induced, na.rm=TRUE) 
-var(infert$spontaneous, na.rm=TRUE) 
-var(infert$age, na.rm=TRUE) 
-var(infert$parity, na.rm=TRUE)
-var(infert$education, na.rm=TRUE) # sense with nominal data?
+var(infert$induced) 
+var(infert$spontaneous) 
+var(infert$age) 
+var(infert$parity)
 
 # 5.f. Standard deviation
-sd(infert$induced, na.rm=TRUE) 
-sd(infert$spontaneous, na.rm=TRUE) 
-sd(infert$age, na.rm=TRUE) 
-sd(infert$parity, na.rm=TRUE)
-sd(infert$education, na.rm=TRUE) # sense with nominal data?
+sd(infert$induced) 
+sd(infert$spontaneous) 
+sd(infert$age) 
+sd(infert$parity)
 
-# 5.g. Quartiles
-summary(infert$induced, na.rm=TRUE) # sense?
-summary(infert$spontaneous, na.rm=TRUE) # sense?
-summary(infert$age, na.rm=TRUE) 
-summary(infert$parity, na.rm=TRUE)
+# 5.g. Quartiles & Interquartile Ranges
+# Quartiles
+summary(infert$induced)
+summary(infert$spontaneous)
+summary(infert$age) 
+summary(infert$parity)
 
+# Interquartile Ranges
 IQR(infert$age)
-IQR(infert$induced, na.rm=TRUE) # sense?
-IQR(infert$spontaneous, na.rm=TRUE) # sense?
-IQR(infert$age, na.rm=TRUE) 
-IQR(infert$parity, na.rm=TRUE)
+IQR(infert$induced)
+IQR(infert$spontaneous)
+IQR(infert$age) 
+IQR(infert$parity)
 
 # create subset for spontaneous
 indu1 <- subset(infert, induced == 1)
