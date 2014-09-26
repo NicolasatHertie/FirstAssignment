@@ -1,8 +1,8 @@
 ### 1. Working directory
-# setwd ('/Users/Nico/Documents/FirstAssignment')
+setwd ('/Users/Nico/Documents/FirstAssignment')
 
 ### 2. Source each other's files
-# source ('/Users/Nico/Documents/FirstAssignment/Final_R-code_Meilin.R')
+source ('Final_R-code_Meilin.R')
 
 ### 3. Choose the data set
 
@@ -11,6 +11,9 @@ data()
 
 # Load the core data set called women
 data(women) 
+
+### 4. Look at the data set
+?women
 
 # Look at the names of the variables in the data set
 names(women) 
@@ -22,15 +25,21 @@ head(women[,])
 
 ### Given that the data set looks at the average heights and weights
 ### for American women aged 30 to 39, it is worth looking at the following
-### descriptive statistics: mean, mode, medium, variance and standard deviation.
-### The frequency is not providing useful information and the histogram is thus
-### not very relevant.
+### descriptive statistics: frequency (histrograms), mean, mode, quartiles 
+### and interquartile ranges, medium, variance and standard deviation,
+### boxplots and distribution plots. I additionally plotted the variables
+### at the beginning to look at the relationship between them. 
 
-# 1. Plot variables to observe potential links
+
+# 5.1 Histograms
+hist(women$height, xlab = "Height (in)")
+hist(women$weight, xlab = "Weight (lb)")
+
+# 5.2 Plot variables to observe potential links
 plot(women, xlab = "Height (in)", ylab = "Weight (lb)",
      main = "Women data: American women aged 30-39")
 
-# 2. Mean
+# 5.2 Mean
 mean (women$height)
 mean (women$weight)
 
@@ -44,7 +53,7 @@ summary(women$weight)
 IQR(women$height)
 IQR(women$weight)
 
-# 5. Range and interquartile range
+# 5. Range
 range(women$height)
 range(women$weight)
 
