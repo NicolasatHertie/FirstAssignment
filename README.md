@@ -35,9 +35,9 @@ Another pair makes a pull request. And this is discussed/merged.
 
 # Learning objectives: 
 Develop your understanding of: 
-+ file structures,
-+ version control,
-+ basic R data structures and descriptive statistics.
++ File structures,
++ Version control,
++ Basic R data structures and descriptive statistics.
 
 # Deadline for submission
 Midnight 26 September.
