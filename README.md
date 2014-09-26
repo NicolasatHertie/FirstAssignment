@@ -1,9 +1,8 @@
 
 # MPP-E1180: Introduction to Collaborative Social Science Data Analysis
 
-First Pair Assignment
+First Pair Assignment, Friday, 26th September 2014
 
-### Friday, 26th September 2014
 ===============
 
 
