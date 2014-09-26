@@ -24,11 +24,11 @@ The code 'CodeNico' works with the data set called women which describes the ave
 
 Both codes are structured according to the following logic:
 
-1. Set the working directory and load packages
-2. Dynamically link the files (only for 'CodeNico')
-3. Choose the data set
-4. Explore the data set
-5. Provide descripitve statistics
+1. Setting the working directory and load packages
+2. Dynamically linking the files (only for 'CodeNico')
+3. Choosing the data set
+4. Exploring the data set
+5. Providing descripitve statistics
 
 
 # Task for the first pair assignment
