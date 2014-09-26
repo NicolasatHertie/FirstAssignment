@@ -1,6 +1,7 @@
 
 # MPP-E1180: Introduction to Collaborative Social Science Data Analysis
 
+
 ### First Pair Assignment: Nicolas Rosemberg & Meilin Möllenkamp
 
 ===============
@@ -18,7 +19,7 @@ R Core Team (2014). R: A language and environment for
 
 Please report any bugs or suggestions at: https://github.com/NicolasatHertie/FirstAssignment/issues/6
 
-### Instructions and background information.
+### Instructions and background information:
 This repository contains two R codes. Both codes are dynamically linked. Please work with the file called 'CodeNico'.
 
 The code 'CodeNico' works with the data set called women which describes the average heights and weights for American women aged 30 to 39. The code 'CodeMeilin' works with the data set infert which describes infertility after spontaneous and induced abortions.
