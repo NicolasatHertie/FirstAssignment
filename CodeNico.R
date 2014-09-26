@@ -2,7 +2,7 @@
 setwd ('/Users/Nico/Documents/FirstAssignment')
 
 ### 2. Source each other's files
-source ('Final_R-code_Meilin.R')
+source('Final_R-code_Meilin.R')
 
 ### 3. Choose the data set
 

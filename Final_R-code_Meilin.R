@@ -1,11 +1,8 @@
-FirstAssignment
-===============
+# FirstAssignment
+# ===============
 
-### 1. Working directory
-# setwd('/Users/Meilin/Downloads/FirstAssignment')
-
-### 2. Source each other's files
-source('/Users/Meilin/Downloads/FirstAssignment/CodeNico.R')
+# Load packages
+library(magrittr)
 
 ### 3. Choose the data set
 
@@ -71,8 +68,8 @@ mean (infert$parity, na.rm=TRUE)
 
 # 5.b. Medium 
 # Loop
-for (i in 1:length(names(infert))) {infert[,i] %>% mean() %>% 
-round(digits=1) %>% paste (names (infert) [i], ., '\n') %>% cat()} # ERROR???
+#for (i in 1:length(names(infert))) {infert[,i] %>% mean() %>% 
+#round(digits=1) %>% paste (names (infert) [i], ., '\n') %>% cat()} # ERROR???
 
 #na.rm - indicating whether NA values should be stripped
 median (infert$induced, na.rm=TRUE) 
@@ -115,11 +112,21 @@ IQR(infert$spontaneous, na.rm=TRUE) # sense?
 IQR(infert$age, na.rm=TRUE) 
 IQR(infert$parity, na.rm=TRUE)
 
+# create subset for spontaneous
+indu1 <- subset(infert, induced == 1)
+indu2 <- subset(infert, induced == 2)
+indu0 <- subset(infert, induced == 0)
+
 # 5.h. Box plots
 boxplot(infert$age)
 boxplot(indu0$age)
 boxplot(indu1$age)
 boxplot(indu2$age)
+
+# create subset for spontaneous
+spon1 <- subset(infert,spontaneous==1)
+spon2 <- subset(infert,spontaneous==2)
+spon0 <- subset(infert,spontaneous==0)
 
 boxplot(spon0$age)
 boxplot(spon1$age)
@@ -139,19 +146,7 @@ ggplot2::ggplot(infert, aes(age, parity)) + geom_point() + geom_smooth() + theme
 
 # 8. Bar Charts
 
-# create subset for spontaneous
-spon1 <- subset(infert,spontaneous==1)
-spon2 <- subset(infert,spontaneous==2)
-spon0 <- subset(infert,spontaneous==0)
-
-# create subset for spontaneous
-indu1 <- subset(infert, induced == 1)
-indu2 <- subset(infert, induced == 2)
-indu0 <- subset(infert, induced == 0)
-
-
 # Bar Chart: induced abortions & education years
-devtools: source_url ('http://bit.ly/OTWEGS')
 plot(indu0$education, xlab ='education')
 plot(indu1$education, xlab ='education')
 plot(indu2$education, xlab ='education')
