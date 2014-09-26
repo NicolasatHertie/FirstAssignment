@@ -8,7 +8,7 @@ library(ggplot2)
 library(magrittr)
 
 ### 2. Source each other's files
-source('CodeMeilin.R')
+# source('CodeMeilin.R')
 
 ### 3. Choose the data set
 
