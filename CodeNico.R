@@ -28,7 +28,7 @@ data(women)
 names(women) 
 
 #  To look at the first 6 observations (in a table)
-head(women[,]) 
+head(women) 
 
 ### 5. Descriptive Statistics
 
