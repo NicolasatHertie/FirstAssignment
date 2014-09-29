@@ -13,7 +13,7 @@ data(infert)
 # Look at the names of the variables in the data set
 names(infert) 
 # Look at the first 6 observations (in a table)
-head(infert[, ]) 
+head(infert) 
 
 ### 3. Descriptive statistics: 
 
